@@ -135,9 +135,9 @@ class MovingLinearRegression:
 
 """
 Testing area below
-"""
-data = pd.read_csv('./SampleData/MLR_Sample_data.csv', parse_dates=[['Date', 'Time']], index_col=['Date_Time'])
+
+data = pd.read_csv('./SampleData/Sample_data.csv', parse_dates=[['Date', 'Time']], index_col=['Date_Time'])
 data['mlr'] = moving_linear_regression(data, 10)
 data['Slope'] = slope(data, 3, mlr_col_name='mlr')
-
+"""
 
