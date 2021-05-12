@@ -28,6 +28,7 @@ def rsi(prices, window_length=14):
 
 """
 Test sample below
-"""
+
 data = pd.read_csv('./SampleData/Sample_data.csv', parse_dates=[['Date', 'Time']], index_col=['Date_Time'])
 data['rsi'] = rsi(data['C'])
+"""
