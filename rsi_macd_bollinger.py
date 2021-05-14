@@ -59,6 +59,6 @@ def bollinger_bands(dataset):
 """
 Testing area below
 
-data = pd.read_csv('./SampleData/Sample_data.csv', parse_dates=[['Date', 'Time']], index_col=['Date_Time'])
+data = pd.read_csv('Sample_data.csv', parse_dates=[['Date', 'Time']], index_col=['Date_Time'])
 print(mac_d(data))
 """
